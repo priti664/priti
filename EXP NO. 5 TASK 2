@@ -1,0 +1,31 @@
+
+Name= Priti Verma
+Div=  C. Roll  no. =12
+UIN=241P012
+
+#include<stdio.h>
+int factorialrecursive(int num){
+if (num<=1){
+
+        return 1;
+}
+return num * factorialrecursive(num-1);
+}
+int main(){
+   int num;
+
+   printf("\t\t\t***RECURSIVE FACTORIAL FUNCTION***\n\n");
+   printf("Enter Number:");
+   scanf("%d",&num);
+   printf("FACTORIAL of %d is %d",num, factorialrecursive(num));
+
+   return 0;
+}
+			***RECURSIVE***       
+
+FACTORIAL FUNCTION
+
+Enter Number:5
+FACTORIAL of 5 is 120
+
+=== Code Execution Successful ===
