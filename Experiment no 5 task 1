@@ -1,0 +1,30 @@
+
+
+Name=Priti Verma 
+Div= C.  Roll no. =12
+UIN =241P012
+
+#include<stdio.h>
+int factorialIterative(int num){
+int prod = 1;
+for(int i=1; i<= num; i++){
+        prod *=i;
+}
+        return prod;
+}
+int main(){
+   int num;
+
+   printf("\t\t\t***ITERATIVE FACTORIAL FUNCTION***\n\n");
+   printf("Enter Number:");
+   scanf("%d",&num);
+   printf("FACTORIAL of %d is %d",num, factorialIterative(num));
+
+   return 0;
+}
+			***ITERATIVE FACTORIAL FUNCTION***
+
+Enter Number:4
+FACTORIAL of 4 is 24
+
+=== Code Execution Successful ===
