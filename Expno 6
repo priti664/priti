@@ -1,0 +1,35 @@
+NAME :PRITI VERMA  
+DIV : C   ROLL NO  : 12
+UIN. : 241P012
+
+#include<stdio.h>
+
+
+void count() {
+    static int counter = 0; 
+    counter++;
+    printf("Counter function called %d time(s)\n", counter);
+}
+
+
+int main() {
+    count(); 
+    count(); 
+    count(); 
+    count(); 
+    count(); 
+
+    return 0;
+}
+
+                OUTPUT
+
+Counter function called 1 time(s)
+Counter function called 2 time(s)
+Counter function called 3 time(s)
+Counter function called 4 time(s)
+Counter function called 5 time(s)
+
+
+=== Code Execution Successful ===
+
