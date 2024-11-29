@@ -1,0 +1,31 @@
+ NAME :PRITI VERMA 
+DIV : C  UIN. : 241P012
+ROLL NO .:  12
+
+#include <stdio.h>
+
+int main() {
+    char str[200];
+    int length = 0;
+
+    printf("Enter a string: ");
+    scanf("%s",str);
+
+    while (str[length] != '\0') {
+        length++;
+    }
+
+    printf("The length of the string is: %d\n", length);
+
+    return 0;
+}
+
+/* Output: 
+
+Enter a string: Hello World
+The length of the string is: 11
+
+*/
+
+
+=== Code Execution Successful ===
