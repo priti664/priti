@@ -1,0 +1,79 @@
+ NAME : VERMA PRITI BHANU
+   DIV   :  C.    ROLL NO.  :  12
+  UIN   :  241P012
+
+ #include<stdio.h>
+
+int main(){
+
+    int size;
+    printf("Enter size of Square Matrix: ");
+    scanf("%d",&size);
+
+    int arr1[size][size], arr2[size][size], sumMatrix[size][size];
+
+    printf("\nEnter Matrix 1: \n");
+    for(int i=0;i<size; i++){
+
+        for(int j=0; j<size; j++){
+
+            printf("Enter a%d%d :",i+1,j+1);
+            scanf("%d",&arr1[i][j]);
+
+        }
+    }
+
+    printf("\nEnter Matrix 2: \n");
+    for(int i=0;i<size;i++){
+
+        for(int j=0; j<size; j++){
+
+            printf("Enter a%d%d :",i+1,j+1);
+            scanf("%d",&arr2[i][j]);
+
+        }
+    }
+
+    for(int i=0; i<size; i++){
+        for(int j=0; j<size; j++){
+            
+            sumMatrix[i][j]=arr1[i][j]+arr2[i][j];
+            
+        }
+    }
+    
+    printf("\nSum Martix of 1 and 2 is\n");
+    for(int i=0; i<size; i++){
+        for(int j=0; j<size; j++){
+            printf("a%d%d : %d\n",i+1,j+1,sumMatrix[i][j]);        
+            
+        }
+    }
+
+return 0;
+}
+
+
+/* Output:
+Enter size of Square Matrix: 2
+
+Enter Matrix 1: 
+Enter a11 :1
+Enter a12 :0
+Enter a21 :4
+Enter a22 :2
+
+Enter Matrix 2: 
+Enter a11 :3
+Enter a12 :4
+Enter a21 :5
+Enter a22 :7
+
+Sum Martix of 1 and 2 is
+a11 : 4
+a12 : 4
+a21 : 9
+a22 : 9
+
+
+=== Code Execution Successful ===
