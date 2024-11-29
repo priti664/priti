@@ -1,0 +1,83 @@
+
+NAME :  PRITI VERMA 
+UIN 241P012. DIV : C 
+ROLL NO. 12
+
+#include <stdio.h>
+
+struct student_record {
+    char name[50];
+    int rollNo;
+    float totalMarks;
+};
+
+int find_topper(struct student_record students[], int n) {
+    int topper_index = 0;
+    for (int i = 1; i < n; i++) {
+        if (students[i].totalMarks > students[topper_index].totalMarks) {
+            topper_index = i;
+        }
+    }
+    return topper_index;
+}
+
+int main() {
+    struct student_record students[5];
+    int n = 5;
+
+    for (int i = 0; i < n; i++) {
+        printf("Student %d\n", i + 1);
+        printf("Name: ");
+        scanf("%s", students[i].name);
+        printf("Roll Number: ");
+        scanf("%d", &students[i].rollNo);
+        printf("Total Marks: ");
+        scanf("%f", &students[i].totalMarks);
+        printf("\n");
+    }
+
+    int topper_index = find_topper(students, n);
+
+    printf("Topper is\n");
+    printf("Name: %s\n", students[topper_index].name);
+    printf("Roll Number: %d\n", students[topper_index].rollNo);
+    printf("Total Marks: %.2f\n", students[topper_index].totalMarks);
+
+    return 0;
+}
+
+
+/* Output: 
+
+Student 1
+Name: rekha
+Roll Number: 1
+Total Marks: 67
+
+Student 2
+Name: lina
+Roll Number: 2
+Total Marks: 78
+
+Student 3
+Name: rohan
+Roll Number: 3
+Total Marks: 80
+
+Student 4
+Name: sejal
+Roll Number: 4
+Total Marks: 57
+
+Student 5
+Name: ayesha
+Roll Number: 5
+Total Marks: 30
+
+Topper is
+Name: rohan
+Roll Number: 3
+Total Marks: 80.00
+
+
+*/
